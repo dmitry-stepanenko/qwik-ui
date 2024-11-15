@@ -23,10 +23,7 @@ describe('init generator', () => {
 
     const expectedContents = tree.read(QWIK_UI_CONFIG_FILENAME, 'utf-8');
 
-    expect(expectedContents).toMatchInlineSnapshot(`
-      "{ "componentsRoot": "src/components/ui" }
-      "
-    `);
+    expect(expectedContents).toMatchSnapshot();
   });
 
   test(`
